@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CarteiraAcoes.Detalhes">
+    <StackLayout Orientation="Vertical" Padding="10">
+        <Image Source="acoes.png"
+               HorizontalOptions="Center">
+        </Image>
+        <Label Text="Data de Cadastro: "></Label>
+        <Label x:Name="Data"></Label>
+        <Label Text="Quantidade de unidades: "></Label>
+        <Label x:Name="Quantidade"></Label>
+        <Label Text="Preço por unidade: "></Label>
+        <Label x:Name="Preco"></Label>
+        <Button x:Name="btnPrevious" Text="Voltar" Clicked="btnPrevious_Clicked"/>
+    </StackLayout>
+</ContentPage>

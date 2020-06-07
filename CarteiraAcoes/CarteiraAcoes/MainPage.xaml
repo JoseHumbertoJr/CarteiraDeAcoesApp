@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CarteiraAcoes.MainPage">
+
+    <StackLayout Padding="10">
+        <Image Source="acoes.png"
+               HorizontalOptions="Center">
+        </Image>
+        <Entry x:Name="nome" Placeholder="Fundo"></Entry>
+        <Entry x:Name="qtd" Placeholder="Quantidade"></Entry>
+        <Entry x:Name="preco" Placeholder="Preço Unitário R$"></Entry>
+        <Button x:Name="Cadastrar" Text="Cadastrar" Clicked="Cadastrar_Clicked"></Button>
+        <ListView x:Name="listaDeAcoes" ItemSelected="listaDeAcoes_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding NewProperty}"></Label>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
